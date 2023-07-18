@@ -58,9 +58,14 @@
          <div class="container">
                <div class="row align-items-center">
                   <div class="col-xl-2 col-lg-2 col-md-6 col-6">
+
+				  <?php  
+				  	$logoimg = get_header_image();
+				  ?>
                      <div class="logo-area">
                            <div class="logo">
-                              <a href=" <?php echo site_url();  ?> "><img src="<?php bloginfo('template_directory');  ?> /assets/img/logo/logo-white.png" alt=""></a>
+                              <!-- <a href=" <?php echo site_url();  ?> "><img src="<?php bloginfo('template_directory');  ?> /assets/img/logo/logo-white.png" alt=""></a> -->
+							  <a href=" <?php echo site_url();  ?> "><img src="<?php echo $logoimg  ?> " alt=""></a>
                            </div>
                      </div>
                   </div>
