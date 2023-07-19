@@ -4,3 +4,17 @@ https://www.youtube.com/watch?v=wB9DQ2yDycI&list=PLSQXugOW7xOyLUyCm_ax-hZR8xMdkm
 
 WscubeTech:
 https://www.youtube.com/watch?v=wIFQabTDZ70&list=PLjVLYmrlmjGc_A9H4NSLEHaD8kSz9Q38g
+
+In wordpress:
+==================
+***Blog page call always our default index.php page 
+other page: call page.php
+Custom Page:Home page - we will make custome page for home and contact ect according to our needs.
+
+** In home page setting Posts page will be Blog and homepage will be home. home page will have custome page
+	have_posts() -- will work only in index.php
+	the_excerpt() -- In post short description known WRITE AN EXCERPT (OPTIONAL)
+
+---------------------------------------------------------------------------------------------------------------
+
+
