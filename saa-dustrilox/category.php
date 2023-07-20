@@ -1,5 +1,6 @@
 <?php
    get_header();
+   
 ?>
 
 
@@ -17,7 +18,7 @@
                   <div class="page__title-wrapper mt-100">
                      <div class="breadcrumb-menu">
                         <ul>
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="index.html">Category page</a></li>
                             <li><span>News</span></li>
                         </ul>
                     </div>
@@ -32,11 +33,6 @@
       <!-- blog__details-area start -->
       <div class="blog__area pt-120 pb-65">
          <div class="container custom-container-3">
-
-         <!-- my custom wiget show start -->
-         <!-- <div class="row">
-            <?php dynamic_sidebar('sidebar');   ?>
-         </div> -->
 
             <!-- my custom blog start -->
 
@@ -70,7 +66,7 @@
                                        
                                        <div class="tp-blog-btn mt-25">
                                           <a href="<?php the_permalink();  ?>" class="tp-btn">Read More</a>
-
+                                          
                                        </div>
                                     </div>
                                  </div>
@@ -87,11 +83,7 @@
 
                   </div>
                </div>
-               <div class="col-lg-4">  
-                   <!-- <?php dynamic_sidebar('sidebar');   ?> -->
-
-                   <?php get_sidebar();  ?>    <!-- call custom sidebar.php here --> 
-               </div>
+               <div class="col-lg-4">  </div>
             </div>
             <!-- my custom blog end -->
 

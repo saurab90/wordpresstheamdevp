@@ -4358,7 +4358,35 @@ input[type=color] {
  .pagespaceing{
   padding-top: 15px;
  }
+/* 
+*** UpdatedBy:saurab:20-07-2023
+ */
+ .commentlist li{
+  list-style: none;
+  margin-bottom: 20px;
 
+ }
+ .commentlist .comment-body{
+  background: #f1ebeb
+
+ }
+ .commentlist .comment-body p{
+  color: rgb(46, 80, 233);
+
+ }
+ .commentmetadata{
+  color: black;
+ }
+
+ .widget {
+  list-style: none;
+  margin-bottom: 20px;
+ }
+ .wp-block-pages-list__item{
+  padding: 5px;
+  border: #24292d;
+  background-color: #e9d8d8;
+ }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .banner-slide-height {

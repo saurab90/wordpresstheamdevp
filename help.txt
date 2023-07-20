@@ -16,5 +16,45 @@ Custom Page:Home page - we will make custome page for home and contact ect accor
 	the_excerpt() -- In post short description known WRITE AN EXCERPT (OPTIONAL)
 
 ---------------------------------------------------------------------------------------------------------------
+*** Navigation in page:
+	Dependancy plugin: WP-PageNavi install
+	Dependant Function: in index.php write <?php 
+                           echo wp_pagenavi();
+                        ?>
+----------------------------------------------------------------------------------------------------------------
+*** single.php:
+index.php write <?php the_permalink();  ?>
+----------------------------------------------------------------------------------------------------------------
+*** Wigest in admin sidebar: it's use for Dynamic side bar show
+In function.php we will call
+register_sidebar(
+		array(
+			'name'=>'Sidebar Location',
+			'id'=>'sidebar',
+		)
+		);
+
+and in idex.php call  <?php dynamic_sidebar('sidebar');   ?>
+-----------------------------------------------------------------------------------------------------------------
+*** Dynamic Title:
+In Header.php we will add 
+<title>
+		<?php bloginfo('name'); ?> 
+		<?php wp_title(); ?> 
+		<?php 
+			if(is_front_page()) 
+			{  
+			 	echo "|";	bloginfo('discription'); 
+			} 
+		?> 
+</title>
+-------------------------------------------------------------------------------------------------------------------
+*** BackGround Image in Admin Side bar:
+	In function.php we will call 
+		add_theme_support('custom-background');
+	In header.php page we will call <?php body_class(); ?> in body tag element
+
+
+
 
 

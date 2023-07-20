@@ -5,9 +5,11 @@ the_post();
 
 ?>
 
+
+
 <main>
 
-         <div class="container">
+<div class="container">
             <div class="row showpath">
                <div class="col-xl-12">
                   <div class="brand__title text-center">
@@ -21,28 +23,7 @@ the_post();
         <section class="pagespaceing">
          <div class="container">
             <div class="row align-items-center">
-               <!-- <div class="col-xl-2 col-lg-2">
-                  <div class="ab-tab-info mb-30">
-                     <div class="ab-image w-img">
-                        <img src="<?php bloginfo('template_directory');  ?> /assets/img/about/about-1.jpg" alt="">
-                     </div>
-                     <div class="absp-text absp-text-1">
-                        <i class="flaticon-windmill"></i>
-                        <div class="absp-info">
-                           <h5><span class="counter">5000</span>+</h5>
-                           <span class="absm-title">Projects Done</span>
-                        </div>
-                     </div>
-                     <div class="absp-text absp-text-2">
-                        <i class="flaticon-container-1"></i>
-                        <div class="absp-info">
-                           <h5><span class="counter">3300</span>+</h5>
-                           <span class="absm-title">Happy Customer</span>
-                        </div>
-                     </div>
-                  </div>
-               </div> -->
-               <div class="col-xl-12 col-lg-12">
+               <div class="col-xl-8 col-lg-8">
                   <div class="ab-left-content">
                      <?php the_post_thumbnail('large');  ?>
 
@@ -53,10 +34,15 @@ the_post();
                      </div>
                   </div>
                </div>
+               <div class="col-xl-4 col-lg-4">
+                  <div class="ab-left-content">
+                        <!-- call custom sidebar.php here --> 
+                        <?php get_sidebar();  ?>
+                  </div>
+               </div>
             </div>
          </div>
-      </section>
-
+      </section> 
 </main>
 
 <?php

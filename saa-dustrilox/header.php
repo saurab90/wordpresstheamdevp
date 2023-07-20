@@ -6,7 +6,7 @@
  *
 
  */
-
+	wp_head();
 ?>
 
 <!doctype html>
@@ -14,7 +14,18 @@
    <head>
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
-      <title>Dustrilox - Construction & Industry HTML5 Template </title>
+      <!-- <title>Dustrilox - Construction & Industry HTML5 Template </title> -->
+      <title>
+		<?php bloginfo('name'); ?> 
+		<?php wp_title(); ?> 
+		<?php 
+			if(is_front_page()) 
+			{  
+			 	echo "|";	bloginfo('discription'); 
+			} 
+		?> 
+	 </title>
+
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -35,7 +46,7 @@
       <link rel="stylesheet" href="<?php bloginfo('template_directory');  ?> /assets/css/spacing.css">
       <link rel="stylesheet" href="<?php bloginfo('template_directory');  ?> /assets/css/style.css">
    </head>
-   <body>
+   <body <?php body_class(); ?> >
       <!--[if lte IE 9]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
       <![endif]-->
