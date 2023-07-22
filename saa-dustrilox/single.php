@@ -70,7 +70,12 @@ get_header();
 
                              </div>
                           </div>
-                     
+                          <ul>
+            <li>
+               <!-- custom post Type with custom Fields Data -->
+               <p>Today's Mood: <?php echo get_post_meta($post->ID, 'Mood', true); ?></p>
+            </li>
+   </ul>
 
               <div class="row">
                  <?php

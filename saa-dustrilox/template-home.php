@@ -1,7 +1,7 @@
 <?php  
 //Template Name: tmp-home
 get_header();
-
+the_post();
 ?>
 
 
@@ -166,7 +166,13 @@ get_header();
          <div class="col-xl-6 col-lg-6">
             <div class="ab-tab-info mb-30">
                <div class="ab-image w-img">
-                  <img src="<?php bloginfo('template_directory');  ?> /assets/img/about/about-1.jpg" alt="">
+                  <!-- <img src="<?php bloginfo('template_directory');  ?> /assets/img/about/about-1.jpg" alt=""> -->
+                  
+                  <!-- img come from ACF data -->
+                  <?php if( get_field('about_us_img') ): ?>
+                     <img src="<?php the_field('about_us_img',$post->ID); ?>" />
+                  <?php endif; ?>
+
                </div>
                <div class="absp-text absp-text-1">
                   <i class="flaticon-windmill"></i>
@@ -186,14 +192,23 @@ get_header();
          </div>
          <div class="col-xl-6 col-lg-6">
             <div class="ab-left-content">
-               <div class="section__wrapper mb-30">
+               <!-- <div class="section__wrapper mb-30">
                   <h4 class="section__title">We can take your business to the next level.</h4>
                   <div class="r-text">
                      <span>about us</span>
                   </div>
+               </div> -->
+               <div class="section__wrapper mb-30">
+                  <h4 class="section__title"><?php the_field('about_us_heading_1',$post->ID)  ?></h4>
+                  <div class="r-text">
+                     <span>about us</span>
+                  </div>
                </div>
-               <p class="abd-text">We is the partner of choice for many of the world’s leading enterprises,
-                  SMEs and technology challengers.</p>
+               
+               <!-- <p class="abd-text">We is the partner of choice for many of the world’s leading enterprises,
+                  SMEs and technology challengers.</p> -->
+                  <p class="abd-text"><?php the_field('about_us_short_description',$post->ID)  ?></p>
+
                   <div class="ab-author mb-30">
                      <h5>Bhocherd Simon <span>- Founder</span></h5>
                   </div>
@@ -854,6 +869,34 @@ get_header();
    </div>
 </section>
 <!-- blog__area end -->
+
+<!-- wp_query use in home template after custom post done (Start) -->
+
+
+<?php   
+   $wpnew = array(
+      //'post_type' => 'post',
+      'post_type' => 'homeevent',
+      'post_status' => 'publish'
+   );
+   
+   $newsquery = new wp_Query($wpnew);
+   while($newsquery -> have_posts()){
+      $newsquery -> the_post();
+      ?>
+      <div class= "row">
+         <p> 
+           <a href="<?php the_permalink();  ?>"> <h1><?php  the_title(); ?> </h1> </a>
+            <b><?php the_content(); ?></b>
+         </p>
+
+      </div> 
+      
+      <?php
+   }
+?>
+
+<!-- wp_query use in home template after custom post done (end) -->
 
 </main>
 

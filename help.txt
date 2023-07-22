@@ -54,7 +54,66 @@ In Header.php we will add
 		add_theme_support('custom-background');
 	In header.php page we will call <?php body_class(); ?> in body tag element
 
+--------------------------------------------------------------------------------------------------------------------
+*** Custom Post Type:
+https://www.youtube.com/watch?v=UPiYHPkeoA8
+
+in home-custome-post-type.php file write:
+
+<?php
+
+// custom post type
+function custom_post_type(){
+	register_post_type('homeevent',array(
+		'public'=>true,
+		'menu_icon' => 'dashicons-palmtree',
+		'labels' => array(
+			'name' => 'Home Page Fields',
+            'add_new_item' => __( 'Add New Custom Article' ),
+            'edit_item'  => __( 'Edit Custom Article' ),
+            'all_items'   => __( 'My Home Page Custom Articles' ),
+
+        ),
+        
+        'supports'  => array('title','editor','thumbnail','custom-fields'),
+
+	));
+}
+add_action('init','custom_post_type');
+--------------------------------------------------------------------------------------
+in template-home.php page we will write: to get data 
+
+<!-- wp_query use in home template after custom post done (Start) -->
 
 
+<?php   
+   $wpnew = array(
+      //'post_type' => 'post',
+      'post_type' => 'homeevent',
+      'post_status' => 'publish'
+   );
+   
+   $newsquery = new wp_Query($wpnew);
+   while($newsquery -> have_posts()){
+      $newsquery -> the_post();
+      ?>
+      <div class= "row">
+         <p> 
+           <a href="<?php the_permalink();  ?>"> <h1><?php  the_title(); ?> </h1> </a>
+            <b><?php the_content(); ?></b>
+         </p>
+      </div> 
+
+      <?php
+   }
+?>
+---------------------------------------------------------------------------------------------------------------------
+*** Custom Fields in Custom post type:
+https://www.youtube.com/watch?v=hVOh-weH5LU
+
+*** ACF plugin for Advance Custom Field's for updating dynamic data of Custome Home template etc 
+https://www.youtube.com/watch?v=oIwtBJcOiyQ&t=569s
+
+---------------------------------------------------------------------------------------------------------------------
 
 
