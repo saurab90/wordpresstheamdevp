@@ -5,6 +5,10 @@ https://www.youtube.com/watch?v=wB9DQ2yDycI&list=PLSQXugOW7xOyLUyCm_ax-hZR8xMdkm
 WscubeTech:
 https://www.youtube.com/watch?v=wIFQabTDZ70&list=PLjVLYmrlmjGc_A9H4NSLEHaD8kSz9Q38g
 
+Mr.Digital For Basic:
+https://www.youtube.com/watch?v=TmmLRv9yY0M&list=PLgFB6lmeXFOpHnNmQ4fdIYA5X_9XhjJ9d&index=5
+
+
 In wordpress:
 ==================
 ***Blog page call always our default index.php page 
@@ -113,7 +117,7 @@ https://www.youtube.com/watch?v=hVOh-weH5LU
 
 *** ACF plugin for Advance Custom Field's for updating dynamic data of Custome Home template etc 
 https://www.youtube.com/watch?v=oIwtBJcOiyQ&t=569s
-
+https://www.youtube.com/watch?v=CZ24ZaZAkR0&t=14s
 ---------------------------------------------------------------------------------------------------------------------
 
 
