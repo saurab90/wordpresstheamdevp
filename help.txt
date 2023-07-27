@@ -8,6 +8,12 @@ https://www.youtube.com/watch?v=wIFQabTDZ70&list=PLjVLYmrlmjGc_A9H4NSLEHaD8kSz9Q
 Mr.Digital For Basic:
 https://www.youtube.com/watch?v=TmmLRv9yY0M&list=PLgFB6lmeXFOpHnNmQ4fdIYA5X_9XhjJ9d&index=5
 
+Wp academy: html to wp
+https://www.youtube.com/watch?v=y2vRPxOBuG4&list=PL6Kd_lvAfBubTNztQ2H-IezpF8LthMCBA&index=19
+
+Online Web Tutor:
+https://www.youtube.com/watch?v=osPVrfvEuy0&list=PLT9miexWCpPV9WxY_QG3qxUGKzw54LboW&index=7
+
 
 In wordpress:
 ==================
@@ -111,6 +117,12 @@ in template-home.php page we will write: to get data
       <?php
    }
 ?>
+
+*** Search.php will return the search result
+<!-- search option -->
+<?php get_search_form();   ?>
+
+
 ---------------------------------------------------------------------------------------------------------------------
 *** Custom Fields in Custom post type:
 https://www.youtube.com/watch?v=hVOh-weH5LU
