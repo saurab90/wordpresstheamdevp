@@ -14,6 +14,9 @@ https://www.youtube.com/watch?v=y2vRPxOBuG4&list=PL6Kd_lvAfBubTNztQ2H-IezpF8LthM
 Online Web Tutor:
 https://www.youtube.com/watch?v=osPVrfvEuy0&list=PLT9miexWCpPV9WxY_QG3qxUGKzw54LboW&index=7
 
+***Register Theme Customizer Panel Settings:(important for custome theme contant)
+https://www.youtube.com/watch?v=sBXPx5F7m-c&list=PLT9miexWCpPV9WxY_QG3qxUGKzw54LboW&index=27
+https://developer.wordpress.org/reference/hooks/customize_register/
 
 In wordpress:
 ==================
