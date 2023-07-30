@@ -17,6 +17,12 @@ https://www.youtube.com/watch?v=osPVrfvEuy0&list=PLT9miexWCpPV9WxY_QG3qxUGKzw54L
 ***Register Theme Customizer Panel Settings:(important for custome theme contant)
 https://www.youtube.com/watch?v=sBXPx5F7m-c&list=PLT9miexWCpPV9WxY_QG3qxUGKzw54LboW&index=27
 https://developer.wordpress.org/reference/hooks/customize_register/
+https://www.youtube.com/watch?v=YzNfIM_9TaM
+
+*** Customizer class in function.php
+https://wpmudev.com/blog/wordpress-theme-customizer-guide/
+
+
 
 In wordpress:
 ==================
